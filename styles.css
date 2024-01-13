@@ -126,26 +126,33 @@ a{
 
 /* Restante do seu CSS permanece o mesmo */
 
-.floating-image {
-    position: fixed;
-    top: 15px;
-    left: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-image: url('deborah.jpg');
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    z-index: 1000;
+
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.floating-image:hover {
-    transform: scale(2.0);
+.logo img {
+
+    border-radius: 15PX;
+    width: 900px; /* Ajuste conforme necessário */
+    height: 200PX;
+    margin-right: 10px;
+    transition: 0.9s;
 }
 
-.transparent {
-    opacity: 0.5; /* Defina a opacidade desejada quando a imagem estiver transparente */
+.logo img {
+    width: 900px; 
+    height: 200;
+    margin-right: 10px;
+    transition: box-shadow 0.3s ease-in-out; /* Adiciona transição para suavizar a mudança de sombra */
 }
 
+
+.logo img:hover {
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Ajuste conforme necessário */
+}
