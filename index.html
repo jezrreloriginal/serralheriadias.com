@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pagamento Pendente - Serralheria Dias - </title>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            <h2>Pagamento Pendente</h2>
+        </div>
+        <div class="payment-card">
+            <p>Escolha uma opção de pagamento:  <p style="color: brown; font-style: oblique;" >(o pagamento pode levar até 3 dias úteis <br> para ser confirmado )</p>
+            <div class="options">
+                <img src="qr.png" alt="Pix QR Code" id="pixImg">
+                <button id="payPix">Pagar com Pix</button>
+                <input type="text" id="pixCode" readonly value="Código Pix: 0123456789">
+                <button id="copyCode">Copiar Código</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+        <img src="qr.png" alt="Pix QR Code" class="modal-img">
+        <button id="closeModal">Fechar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
